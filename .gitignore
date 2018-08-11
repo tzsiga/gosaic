@@ -2,3 +2,4 @@
 /gosaic.sqlite3
 /.cover
 /coverage.xml
+.DS_Store

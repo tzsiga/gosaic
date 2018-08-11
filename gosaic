@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# example params: mosaic aspect ../images/macro/final/b30_original.jpg -s 40 -w 9000 -n b30_40_9000
+docker run -it --rm --name gosaic gosaic $@

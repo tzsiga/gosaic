@@ -1,11 +1,9 @@
-FROM golang:1.7
+FROM golang:1.8
 
-WORKDIR /home/app
-RUN mkdir src pkg bin vendor
-COPY ./src/ /home/app/src/
-COPY ./vendor/ /home/app/vendor/
-COPY ./Makefile /home/app/
-COPY ./version /home/app/
-RUN make
+WORKDIR /go/src/app
+COPY . .
 
-ENTRYPOINT ["/home/app/bin/gosaic"]
+RUN go get -d -v .
+RUN go install -v .
+
+ENTRYPOINT ["/go/bin/app"]

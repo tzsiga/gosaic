@@ -4,6 +4,14 @@
 
 Create your own image mosaics.
 
+## Usage with docker
+
+```
+λ docker build .
+
+λ ./gosaic [...]
+```
+
 ## Installation
 
 ### Binary
@@ -41,8 +49,6 @@ GOSAIC: 2016/12/14 17:53:14 Indexing 1744 images...
 
 ### Create an Aspect Mosaic
 
-[<img src="examples/obi-aspect-mosaic-small.jpg">](examples/obi-aspect-mosaic.jpg)
-
 ```shell
 λ gosaic mosaic aspect ~/tmp/obi.jpg --width 3600 --height 3600 -n obi-aspect
 GOSAIC: 2016/12/14 18:00:27 Building 900 cover partials...
@@ -63,8 +69,6 @@ GOSAIC: 2016/12/14 20:10:32 Wrote mosaic image: /home/atongen/tmp/obi-aspect-mos
 ```
 
 ### Create a Quad Mosaic
-
-[<img src="examples/obi-quad-mosaic-small.jpg">](examples/obi-quad-mosaic.jpg)
 
 ```shell
 λ bin/gosaic mosaic quad ~/tmp/obi.jpg --width 3600 --height 3600 -n obi-quad
