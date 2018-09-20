@@ -1,5 +1,9 @@
-/dist/*
-/gosaic.sqlite3
-/.cover
-/coverage.xml
 .DS_Store
+
+db
+images
+
+src/dist/*
+src/gosaic.sqlite3
+src/.cover
+src/coverage.xml
