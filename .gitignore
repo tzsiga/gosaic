@@ -1,7 +1,9 @@
 .DS_Store
 
-db
-images
+db/*
+!db/.gitkeep
+images/*
+!images/.gitkeep
 
 src/dist/*
 src/gosaic.sqlite3
